@@ -12,62 +12,52 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body class="bg-light d-flex flex-column min-vh-100">
 
   <!-- ===== Navbar ===== -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">🧠 Main Page</a>
-      <div class="col-md-6">
-        <div class="search-container">
-          <input type="text" class="form-control search-input" placeholder="Search...">
-          <i class="fas fa-search search-icon"></i>
-        </div>
-      </div>
-    </div>
+      <a class="navbar-brand fw-bold" href="index.html">MAIN PAGE</a>
     </div>
   </nav>
-  <div class="container  mt-5 pt-5">
-    <!-- ABOUT SECTION -->
-    <div class="row about mt-5" id="about">
-      <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 border-top border-start border-bottom border-dark border-4">
-        <div id="about-title" class="text-center justify-content-center">
-          <img  src="../assets/images/chicago.jpg" alt="UNA" class="profile-img img-thumbnail">
-        </div>
-      </div>
-      <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 border border-dark border-4" id="info">
-        <h2>Game Title</h2>
-        <h4>Game Author</h4>
-        <h4>Link</h4>
-        <p><a href="https://github.com/Kise1205" target="_blank" id="about-fname">https://github.com/Kise1205</a></p>
-      </div>
+
+  <!-- Main -->
+  <div class="container mt-5 pt-5">
+    <header class="text-center py-5">
+      <h1>CIS 376 Class Game Collection</h1>
+      <p>Play fun web games created by students in CIS 376 – Web Development.</p>
+      <a href="#cardsGrid" class="btn btn-primary btn-lg mt-2">Browse Games</a>
+    </header>
+    <!-- Toolbar -->
+    <div class="d-flex align-items-center justify-content-between mb-3">
+      <h1 class="h4 m-0 fw-bold text-dark">CLASS GAMES</h1>
+      <select id="sortSelect" class="form-select w-auto">
+        <option value="asc">Sort: A → Z</option>
+        <option value="desc">Sort: Z → A</option>
+      </select>
     </div>
 
-    <div class="row about mt-5" id="about">
-        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 border-top border-start border-bottom border-dark border-4">
-          <div id="about-title" class="text-center justify-content-center">
-            <img  src="../assets/images/chicago.jpg" alt="UNA" class="profile-img img-thumbnail">
-          </div>
-        </div>
-        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 border border-dark border-4" id="info">
-          <h2>Game Title</h2>
-          <h4>Game Author</h4>
-          <h4>Link</h4>
-          <p><a href="https://github.com/Kise1205" target="_blank" id="about-fname">https://github.com/Kise1205</a></p>
-        </div>
-      </div>
+    <!-- Cards go here -->
+    <div id="cardsGrid" class="row g-3"></div>
+
+    <!-- Empty state -->
+    <div id="emptyState" class="text-center py-5 d-none">
+      <p class="lead mb-1">No results</p>
+      <p class="text-muted">Try a different sort.</p>
+    </div>
   </div>
 
-
   <!-- ===== Footer ===== -->
-  <footer class="mt-auto py-3 bg-primary text-white text-center small">
+  <footer class="mt-auto py-3 bg-dark text-white text-center small">
     <p class="mb-1">Copyright © 2025 by Team 3 | All Rights Reserve</p>
-    <a class="text-white text-decoration-underline" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fkise1205.github.io%2Furban-disco-bravo%2F" id="aboutLink" target="_blank">NU HTML Validator</a>
-    <a class="text-white text-decoration-underline" href="https://wave.webaim.org/report#/https://kise1205.github.io/urban-disco-bravo/" id="aboutLink1" target="_blank">WAVE Validator</a>
-    <a class="text-white text-decoration-underline" href="https://github.com/Kise1205/urban-disco-bravo" id="aboutLink2" target="_blank">Source Code</a>
-    <a class="text-white text-decoration-underline" href="https://github.com/Kise1205/urban-disco-bravo/issues/3" id="aboutLink3" target="_blank">Wireframe</a>
+    <a class="text-white text-decoration-underline" href="#" target="_blank">NU HTML Validator</a>
+    <a class="text-white text-decoration-underline" href="#" target="_blank">WAVE Validator</a>
   </footer>
+
+  <!-- JS -->
+  <script type="module" src="scripts/script.js"></script>
 </body>
+</html>

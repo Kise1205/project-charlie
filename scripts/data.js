@@ -1,4 +1,4 @@
-const stuData = [
+export const stuData = [
     {
         "name": "Matching Game",
         "repo": "https://github.com/Alex-Copeland-5/alex-copeland-5",
@@ -80,5 +80,26 @@ const stuData = [
         "app": "https://saimon215.github.io/a-tiny-game/",
         "img": "https://github.com/Saimon215/a-tiny-game/blob/main/assets/screenshot-game.png"
 
-    }
+    },
+    {
+    "name": "ZN Matching Game",
+    "repo": "https://github.com/znasser46/zn_matching_game",
+    "app": "https://znasser46.github.io/zn_matching_game/",
+    "img": "https://github.com/znasser46/znasser46/blob/main/docs/images/game_screenshot.png"
+    },
+    {
+        "name": "Snap Test",
+        "repo": "https://github.com/plateplate/project-bravo",
+        "app": "https://plateplate.github.io/project-bravo/"
+      },
+      {
+        "name": "Punching Bag",
+        "repo": "https://github.com/Genovios/punching-bag-game",
+        "app": "https://genovios.github.io/punching-bag-game/"
+      },
+      {
+        "name": "Fortune Clicker",
+        "repo": "https://github.com/EDMullins/FortuneClicker",
+        "app": "https://edmullins.github.io/FortuneClicker/"
+      },
 ]
