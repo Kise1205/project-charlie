@@ -90,3 +90,14 @@ footer a:hover {
   font-size: 1.2rem;
   color: #6c757d;
 }
+
+/* Header Background */
+.hd-background {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(90deg, #000000 0%, #434343 100%);
+  color: white;
+  min-height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
