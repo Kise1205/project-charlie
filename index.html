@@ -1,64 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Memory Match Game</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Memory Match Game</title>
 
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles/styles.css">
-</head>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
 
-<body class="bg-light d-flex flex-column min-vh-100">
+  <body class="bg-light d-flex flex-column min-vh-100">
 
-  <!-- ===== Navbar ===== -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">MAIN PAGE</a>
+    <!-- ===== Navbar ===== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">MAIN PAGE</a>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <div class="container mt-5 pt-5">
+      <header class="text-center py-5 hd-background mb-3">
+        <h1>CIS 376 Class Game Collection</h1>
+        <p>Play fun web games created by students in CIS 376 – Web Development.</p>
+        <a href="#cardsGrid" class="btn btn-primary btn-lg mt-2">Browse Games</a>
+      </header>
+      <!-- Toolbar -->
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <h1 class="h4 m-0 fw-bold text-dark">CLASS GAMES</h1>
+        <select id="sortSelect" class="form-select w-auto">
+          <option value="asc">Sort: A → Z</option>
+          <option value="desc">Sort: Z → A</option>
+        </select>
+      </div>
+
+      <!-- Cards go here -->
+      <div id="cardsGrid" class="row g-3"></div>
+
+      <!-- Empty state -->
+      <div id="emptyState" class="text-center py-5 d-none">
+        <p class="lead mb-1">No results</p>
+        <p class="text-muted">Try a different sort.</p>
+      </div>
     </div>
-  </nav>
 
-  <!-- Main -->
-  <div class="container mt-5 pt-5">
-    <header class="text-center py-5 hd-background mb-3">
-      <h1>CIS 376 Class Game Collection</h1>
-      <p>Play fun web games created by students in CIS 376 – Web Development.</p>
-      <a href="#cardsGrid" class="btn btn-primary btn-lg mt-2">Browse Games</a>
-    </header>
-    <!-- Toolbar -->
-    <div class="d-flex align-items-center justify-content-between mb-3">
-      <h1 class="h4 m-0 fw-bold text-dark">CLASS GAMES</h1>
-      <select id="sortSelect" class="form-select w-auto">
-        <option value="asc">Sort: A → Z</option>
-        <option value="desc">Sort: Z → A</option>
-      </select>
-    </div>
+    <!-- ===== Footer ===== -->
+    <footer class="mt-auto py-3 bg-dark text-white text-center small">
+      <p class="mb-1 fw-bold">Copyright © 2025 by Team 3 | All Rights Reserve</p>
+      <a class="text-white fw-bold" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fkise1205.github.io%2Fproject-charlie%2F" target="_blank">NU HTML Validator</a>
+      <a class="text-white fw-bold" href="https://wave.webaim.org/report#/https://kise1205.github.io/project-charlie/" target="_blank">WAVE Validator</a>
+      <a class="text-white fw-bold" href="https://github.com/Kise1205/project-charlie" target="_blank">Source Code</a>
+    </footer>
 
-    <!-- Cards go here -->
-    <div id="cardsGrid" class="row g-3"></div>
-
-    <!-- Empty state -->
-    <div id="emptyState" class="text-center py-5 d-none">
-      <p class="lead mb-1">No results</p>
-      <p class="text-muted">Try a different sort.</p>
-    </div>
-  </div>
-
-  <!-- ===== Footer ===== -->
-  <footer class="mt-auto py-3 bg-dark text-white text-center small">
-    <p class="mb-1 fw-bold">Copyright © 2025 by Team 3 | All Rights Reserve</p>
-    <a class="text-white fw-bold" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fkise1205.github.io%2Fproject-charlie%2F" target="_blank">NU HTML Validator</a>
-    <a class="text-white fw-bold" href="https://wave.webaim.org/report#/https://kise1205.github.io/project-charlie/" target="_blank">WAVE Validator</a>
-    <a class="text-white fw-bold" href="https://github.com/Kise1205/project-charlie" target="_blank">Source Code</a>
-  </footer>
-
-  <!-- JS -->
-  <script type="module" src="scripts/script.js"></script>
-</body>
+    <!-- JS -->
+    <script type="module" src="scripts/script.js"></script>
+  </body>
 </html>
